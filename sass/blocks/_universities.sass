@@ -1,0 +1,123 @@
+.universities
+  margin-top: 50px
+  &__header
+    &--wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 42px
+  &__button
+    background: inherit
+    border: 1px solid #F8F8F8
+    border-radius: 5px
+    color: $text-color
+    font-family: 'Bebas Neue'
+    text-transform: uppercase
+    font-size: 17px
+    padding: 8px
+  &-wrapper
+    z-index: 99
+  &-mainblock
+    display: flex
+    height: 650px
+  &-text
+    align-items: center
+    width: 1200px
+  &__title
+    font-family: 'Bebas Neue' //MyriadPro-Cond Philosopher
+    font-size: 70px
+    font-weight: bold
+    color: black
+  &__subtitle
+    font-family: 'Comfortaa'
+    font-size: 20px
+    color: black
+    font-weight: bold
+  &__img
+    width: 100%
+    height: 625px
+  &-icons
+    text-align: center
+  &__icon
+    width: 500px
+    &--icon1
+      position: relative
+      top: -75px
+      left: -30px
+      right: 1px
+      z-index: 70
+    &--icon2
+      position: relative
+      top: -210px
+      left: -170px
+      width: 450px
+      right: 1px
+      z-index: 80
+    &--icon3
+      position: relative
+      top: -465px
+      width: 430px
+      left: 170px
+      right: 1px
+      z-index: 90  
+    &--icon4
+      display: none  
+.university
+  &__chgu, &__chgpu, &__ggntu
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 2
+      background: linear-gradient( rgba(23, 26, 41, 0.7) 100%)
+  &__name
+    font-family: Bebas Neue
+    z-index: 3
+    color: $titleyellow
+    position: absolute
+    top: 50px
+    margin: 0
+    transform: translateY(350%)
+    font-size: 50px
+    text-align: center
+    //text-decoration: underline
+    cursor: pointer
+  &__name3
+    transform: translateY(140%)
+    text-align: center
+    top: 80px
+  &__title
+    display: flex
+    text-align: center
+    justify-content: center
+.body
+  background-color: #eff6ff//$background//#585a5f//#ebebeb
+.header
+  &__titleV2, &__subtitleV2
+    color: #000
+  &__logo
+    display: flex
+    align-items: center
+.chgu, .ggntu, .chgpu
+  &-body
+    background: #eff6ff//$background
+    padding-top: 0
+.header2
+  padding: 5px 0
+  &__icon
+    margin-right: 14px
+    width: 50px
+    height: 40px
+.main
+  &__button
+    border: 1px solid $text-blue
+    color: $text-blue
+    &:hover
+      background: $hover
+
